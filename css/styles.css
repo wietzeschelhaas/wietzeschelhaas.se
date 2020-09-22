@@ -1,0 +1,38 @@
+.nav-bar-color {
+  background-color: coral;
+}
+
+.masthead{
+  background-color: coral;
+  /*height: 30rem; set height manually, now it will fit content*/ 
+  padding-bottom: 1rem;
+  
+}
+
+.masthead .masthead-profile {
+  width: 12rem;
+
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  padding-bottom: 2rem;
+  
+}
+
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #495057;
+  border-radius: 100%;
+ 
+}
+
+figcaption{
+  text-align: center;
+}
+
+
+
