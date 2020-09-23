@@ -2,33 +2,58 @@
   background-color: coral;
 }
 
+.nav-item{
+  font-size: large;
+}
+
 .masthead{
   background-color: coral;
   /*height: 30rem; set height manually, now it will fit content*/ 
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   
 }
 
 .masthead .masthead-profile {
   width: 12rem;
-
+  margin-top: 2rem;
+  
 }
 
 .masthead .masthead-heading {
   font-size: 2.75rem;
-  padding-bottom: 2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+
   
 }
 
 
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #495057;
-  border-radius: 100%;
+.projects-text{ 
+  padding-top: 2rem;
+  padding-bottom:2rem;
+
  
+
+  
 }
+
+#project-section{
+  background-color:rgb(248, 239, 223);
+}
+
+.about-section{
+  background-color:rgb(248, 239, 223);
+}
+
+.email-text{
+  color:#990D35
+}
+
+
+a.btn-social-icon:hover{
+  color:#990D35
+}
+
 
 figcaption{
   text-align: center;
