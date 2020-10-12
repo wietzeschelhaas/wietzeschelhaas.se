@@ -12,10 +12,10 @@
     <script src="https://kit.fontawesome.com/114c0f7805.js" crossorigin="anonymous"></script>
 
 
-    <title>Hello, world!</title>
+    <title>Wietze Schelhaas</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
         <a href="#" class="navbar-brand">Wietze Schelhaas</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -45,11 +45,11 @@
                 <img src="assets/img/profile.png" class="rounded-circle masthead-profile " alt="profile">
                 <h1 class="text-uppercase mb-0 masthead-heading"> Wietze schelhaas</h1>
                 <div class="subheading">
-                    <i class="ml-2 fas fa-map-marker subheading mb-4"></i>
-                    Uppsala, Sweden
-                    <i class="ml-2 fas fa-mobile"></i>
-                    072-2359166 
-                    <i class="ml-2 fas fa-at"></i>
+                    <i class="ml-2 fas fa-map-marker subheading mb-4 info"></i>
+                    <nobr class="text-inf">Uppsala, Sweden</nobr>
+                    <i class="ml-2 fas fa-mobile info"></i>
+                    <nobr class="text-inf">072-2359166 </nobr>
+                    <i class="ml-2 fas fa-at info"></i>
                     <a class="email-text" href="mailto:name@email.com">wietze.pc@gmail.com</a>
                 </div>            
               </div>
@@ -57,7 +57,7 @@
 
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <a class="btn btn-social-icon " href="#">
+                    <a class="btn btn-social-icon" href="flappy.html">
                         <span class="fab fa-3x fa-github"></span>
                     </a> 
                     <a class="btn btn-social-icon " href="#">
@@ -70,23 +70,30 @@
 
           </div>
         </section>
-    
 
     <section class="projects" id="project-section">
         <div class="container h-100">
             <h1  class="text-center projects-text text-uppercase">Projects</h1>
 
             <div class="row">
+
                 <div class="col-md-6 col-lg-4 mb-5 "> 
                     <figure class="img-responsive">
-                        <img class="img-fluid rounded" src="assets/img/project.jpg" alt="project">
+                        <div class="hovereffect">
+                            <img class="img-fluid rounded" src="assets/img/webserverRaspBerry.png" alt="project">
+                            <div class="overlay">
+                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                             </div>
+                        </div>
+
+                        
                         <figcaption>
-                            <span class="project-details">Full project name</span>
+                            <span class="project-details">Web server in python</span>
                         </figcaption>
                     </figure>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-5 "> 
+                <div class="col-md-6 col-lg-4 mb-5"> 
                     <figure class="img-responsive">
                         <img class="img-fluid rounded" src="assets/img/project.jpg" alt="project">
                         <figcaption>
@@ -138,10 +145,44 @@
     <section class="about-section">
         <p>About section </p>
     </section>
+
+
+
+    <!-- is this a good location for modals?-->
+
+    <div class="modal fade" id="webServerModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Web server from scratch in python</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/webserverRaspBerry.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center">This website is hosted on a Raspberry Pi 3 b+ running a web server made in python using only the low-level socket library. It is multithreaded and supports the most common media types such as images and videos, though it has some trouble serving larger files. As of right now the webserver only supports GET request, 
+                        attempting to send a HTTP request using a method other than GET will result in the server generating a response with the error 501 Not Implemented set in the header.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
