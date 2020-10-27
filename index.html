@@ -57,7 +57,7 @@
 
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <a class="btn btn-social-icon" href="flappy.html">
+                    <a class="btn btn-social-icon" href="#">
                         <span class="fab fa-3x fa-github"></span>
                     </a> 
                     <a class="btn btn-social-icon " href="#">
@@ -98,7 +98,7 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/loop.webp" alt="project">
                             <div class="overlay">
-                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#loopModal" >Show more</a>
                              </div>
                         </div>
 
@@ -114,7 +114,7 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/arcgrid.png" alt="project">
                             <div class="overlay">
-                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#ArcGridParser" >Show more</a>
                              </div>
                         </div>
 
@@ -130,7 +130,7 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/raytracer.png" alt="project">
                             <div class="overlay">
-                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#raytracerModal" >Show more</a>
                              </div>
                         </div>
 
@@ -147,13 +147,13 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/flappy.png" alt="project">
                             <div class="overlay">
-                                <a class="info" href="flappy.html" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#flappyModal" >Show more</a>
                              </div>
                         </div>
 
                         
                         <figcaption>
-                            <span class="project-details">Flappy</span>
+                            <span class="project-details">Flappy bird neural evolution </span>
                         </figcaption>
                     </figure>
                 </div>
@@ -163,13 +163,13 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/nn.png" alt="project">
                             <div class="overlay">
-                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#nnModal" >Show more</a>
                              </div>
                         </div>
 
                         
                         <figcaption>
-                            <span class="project-details">Web server in python</span>
+                            <span class="project-details">Neural network from scratch in Java</span>
                         </figcaption>
                     </figure>
                 </div>
@@ -179,33 +179,36 @@
                         <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/chess.png" alt="project">
                             <div class="overlay">
-                                <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
+                                <a class="info" href="#" data-toggle="modal" data-target="#chessModal" >Show more</a>
                              </div>
                         </div>
     
                         
                         <figcaption>
-                            <span class="project-details">Web server in python</span>
+                            <span class="project-details">Chess implementation using pygame</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5"> 
+                    <figure class="img-responsive">
+                        <div class="hovereffect">
+                            <img class="img-fluid rounded" src="assets/img/robo.png" alt="project">
+                            <div class="overlay">
+                                <a class="info" href="#" data-toggle="modal" data-target="#roboModal" >Show more</a>
+                             </div>
+                        </div>
+    
+                        
+                        <figcaption>
+                            <span class="project-details">Topdown shooter game made in Unity</span>
                         </figcaption>
                     </figure>
                 </div>
 
 
-
-
-
-
-
-
                 
             </div>
-
-
-
-
-
-
-
 
 
 
@@ -247,16 +250,259 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                    <button id="webServerGit" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="loopModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Loop</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/loopGameplay.webp" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        Android game made in LibGDX
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button id="loopGooglePlay" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-google-play"></i> Google Play</button>
+                    <button id="loopGithub" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal fade" id="ArcGridParser">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">ArcGRID Parser in OpenGL ES</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/arcgrid.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        This is an android aplication that takes an ArcGrid raster file and renders the data as a 3D model using OpenGL ES.
+                        Grayscale values are used to color the vertices, indicating how high the region is, whiter areas are higher than darker ones. 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button id="arcGithub" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="modal fade" id="flappyModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Flappy bird neural evolution</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/flappy.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        I made the game flappy bird in LibGDX then applied Neurol evolution to create a bird that beats the game. A simple neural network is developed from scratch and used to determine if a bird should jump or not. The input to this network is the x,y position of the bird, and the x,y position of the pipes. 50 birds are spawned in one generation each of them having its own neural network. When a bird dies, it gets assigned a fitness value which is simply the amount of time the bird managed to survive. This fitness value is used to determine how likely the bird's genetic code (its neural network) is passed on to future generations. When all birds are gone, a new generation is spawned. The birds in the new generation are created by randomly selecting two parent birds from the previous generation and combining its neural networks to create one. The neural networks that produced higher fitness values are more likely to be selected as parents. The newly created birds are mutated slightly and a new generation of birds are confronted with the challenges the game flappy bird pose. Given enough generations, the algorithm produces a neural network that is able to beat the game. 
+                        <br>
+                        <br>
+                        LibGDX allows you to compile to HTML5! Press the start button below to start the flappy bird evolution in your browser.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="startFlappy" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fas fa-external-link-alt"></i> Start</button>
+                    <button id="flappyGithub" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="raytracerModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Raytracer made in c++</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/raytracer.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        Raytraver made in c++, code coming soon
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="#" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="roboModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Topdown shooter game made in Unity</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/robo.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        Topdown shooter game made in Unity and C#
+                        The player controls a character that must defend itself from waves of evil robots. As the number of waves increases, the number of robots that get spawned increases as well.
+                        <br>
+                        <br>
+                        The game can be played in browser by pressing the start button below!
+
+                        <p class="ml-5 font-weight-bold">Game controls</p>
+                        <div class="ml-5 ">
+                            <ul>
+                                <li>Keys w,a,s,d is used to move around</li>
+                                <li>Left mouse button is used to fire the weapon the player is holding</li>
+                                <li>Keys 1,2,3 are used to change weapon/li>
+                                <li>The key b opens up the buy menu</li>
+                                <li>Escape pauses the game</li>
+                              </ul>
+                        </div>
+
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="roboStart" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fas fa-external-link-alt"></i> Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="chessModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Chess implementation using pygame</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/chess.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        chess implementation in python using pygame, this is a work in progress, the idea is to implement minimax to create a simple AI
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="gitChess" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="nnModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Neural network from scatch in Java</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/nn.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        A simple neural network implementation in java. Tested on MNIST handwritten digits dataset which it managed to get 99% accuracy.This is the same neural network as used in the neural evolution flappy bird project. Based on the book : http://neuralnetworksanddeeplearning.com/
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="gitNN" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="js/btnHandler.js"></script>
 
   </body>
 </html>
