@@ -31,7 +31,7 @@
                     <a href="#project-section" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about-section" class="nav-link">About</a>
                 </li>
             </ul>
         </div>
@@ -44,7 +44,11 @@
               <div class="col-12 text-center">
                 <img src="assets/img/profile.png" class="rounded-circle masthead-profile " alt="profile">
                 <h1 class="text-uppercase mb-0 masthead-heading"> Wietze schelhaas</h1>
-                <div class="subheading">
+                
+
+
+
+                <div class=" mt-3 subheading">
                     <i class="ml-2 fas fa-map-marker subheading mb-4 info"></i>
                     <nobr class="text-inf">Uppsala, Sweden</nobr>
                     <i class="ml-2 fas fa-mobile info"></i>
@@ -57,13 +61,13 @@
 
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <a class="btn btn-social-icon" href="#">
+                    <a class="btn btn-social-icon" target="_blank" href="https://github.com/wietzeschelhaas">
                         <span class="fab fa-3x fa-github"></span>
                     </a> 
-                    <a class="btn btn-social-icon " href="#">
+                    <a class="btn btn-social-icon " target="_blank" href="https://www.linkedin.com/in/wietze-schelhaas-41858b1a4/">
                         <span class="fab fa-3x fa-linkedin"></span>
                     </a> 
-                    <a class="btn btn-social-icon " href="#">
+                    <a class="btn btn-social-icon " target="_blank" href="https://www.facebook.com/wietze.schelhaas/">
                         <span class="fab fa-3x fa-facebook"></span>
                     </a> 
             </div>
@@ -219,8 +223,39 @@
         </div>
     </section>
 
-    <section class="about-section">
-        <p>About section </p>
+    <section id="about-section"class="about-section">
+
+        <h1  class="text-center projects-text text-uppercase">About me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md ">
+                    <div class="row "><div class="col-sm-4"><strong class="text-uppercase">Current Work:</strong></div><div class="col-sm-8">Student at Uppsala University</div></div>
+                    <div class="row mt-3 "><div class="col-sm-4"><strong class="text-uppercase">Age</strong></div><div class="col-sm-8">24</div></div>
+                    <div class="row mt-3 "><div class="col-sm-4"><strong class="text-uppercase">location:</strong></div><div class="col-sm-8">Uppsala, Sweden</div></div>
+                    <div class="row mt-3 "><div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div><div class="col-sm-8">wietze.pc@gmail.com</div></div>
+                    <div class="row mt-3 "><div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div><div class="col-sm-8">Swedish, Dutch, English</div></div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="md-form mt-0">
+                        <input id="skills-search" class="form-control" type="text" placeholder="Technologies i know" aria-label="Search">
+                      </div>
+                    <div class="skills-container">
+                    </div>
+
+
+                    <form method="get" action="cv.pdf">
+                        <button class="download-btn mt-2 mb-5"><i class="fa fa-download"></i> CV</button>
+                     </form>
+
+                </div>
+
+    
+            </div>
+        </div>
+
+
+
     </section>
 
 
@@ -503,6 +538,7 @@
 
 
     <script src="js/btnHandler.js"></script>
+    <script src="js/skills.js"></script>
 
   </body>
 </html>
