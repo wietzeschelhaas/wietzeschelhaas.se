@@ -84,6 +84,42 @@
                 <div class="col-md-6 col-lg-4 mb-5"> 
                     <figure class="img-responsive">
                         <div class="hovereffect">
+                            <img class="img-fluid rounded" src="assets/img/rsz_techanalysis.png" alt="project">
+                            <div class="overlay">
+                                <a class="info" href="#" data-toggle="modal" data-target="#CryptoModal" >Show more</a>
+                             </div>
+                        </div>
+    
+                        
+                        <figcaption>
+                            <span class="project-details">RESTfull API for technical indicators between trading pairs in Crypto currencies</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 mb-5"> 
+                    <figure class="img-responsive">
+                        <div class="hovereffect">
+                            <img class="img-fluid rounded" src="assets/img/rsz_2rnn.png" alt="project">
+                            <div class="overlay">
+                                <a class="info" href="#" data-toggle="modal" data-target="#RNNModal" >Show more</a>
+                             </div>
+                        </div>
+    
+                        
+                        <figcaption>
+                            <span class="project-details">Recurrent Neural Network in Java from Scratch</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 mb-5"> 
+                    <figure class="img-responsive">
+                        <div class="hovereffect">
                             <img class="img-fluid rounded" src="assets/img/webserverThumbnail.png" alt="project">
                             <div class="overlay">
                                 <a class="info" href="#" data-toggle="modal" data-target="#webServerModal" >Show more</a>
@@ -209,6 +245,8 @@
                         </figcaption>
                     </figure>
                 </div>
+
+                
 
 
                 
@@ -528,6 +566,68 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="RNNModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">Recurrent Neural Network in Java from Scratch</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/rnn.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        A very simple recurrent neural network from scratch in java. The output layer has the softmax activation function so the implementation supports Multiclass classification. Backpropagation through time can be implemented in several ways, here, gradients are derived at every timestep and accumulated until the first timestep. The model can learn a simple sequence of numbers but has a hard time solving more complex such as text generation. This is most likely due to the vanishing gradient problem.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="gitRNN" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="CryptoModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-header-text">RESTfull API for technical indicators between trading pairs in Crypto currencies</h1>
+                    <button  class="fas fa-3x fa-times modal-close-btn" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+              
+              
+
+                <div class="pt-3 mb-4 text-center ">
+ 
+                </div>
+                
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-5" src="assets/img/rest.png" alt="project" id="raspImage">
+
+                    <p class="mb-5 ml-5 mr-5 text-center"> 
+                        This is a RESTful API for sending technical analysis indicators to clients. The HTTP server is implemented using the python library flask. The API gathers open, close, high, low, and volume data for a bunch of different crypto coin pairs on the popular exchange Binance and stores it in an SQLite database, new data is received every minute for the one minute time frame. To get for example the Relative Strength Index (RSI) of the coin pair BTC/USDT on the 1-minute time frame, an HTTP get request is sent to  <IPAdress>/api/indicators/rsisymbol="BTCUSDT"&timeInterval="1m". The server gets the relevant data out of the SQLite database and calculates the RSI value using the library TA-Lib and sends back the result in JSON format to the client.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button id="gitCrypto" type="button" class=" git-btn btn btn-dark btn-git waves-effect waves-light"><i class="fab fa-github left"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 
     <!-- Optional JavaScript -->

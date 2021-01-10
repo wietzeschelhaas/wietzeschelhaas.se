@@ -1,4 +1,4 @@
-var skills = ["Java", "C#", "C", "C++", "Python", "Javascript", "Libgdx", "OpenGL", "OpenGL ES", "Android", "Matlab", "SQL","SQLite", "HTML", "CSS", "Bootstrap","Git", "Node.js", "Electron", "Latex", "Vim", "Visual Studio", "Intellij", "Gradle", "Keras","Box2D","Unity", "Apache", "REST"]
+var skills = ["Java", "C#", "C", "C++", "Python", "Javascript", "Libgdx", "OpenGL", "OpenGL ES", "Android", "Matlab", "SQL","SQLite", "HTML", "CSS", "Bootstrap","Git", "Node.js", "Electron", "Latex", "Vim", "Visual Studio", "Intellij", "Gradle", "Keras","Box2D","Unity", "Apache", "REST","Pytorch","Jquery",".net"]
 
 var htmlString = "";
 

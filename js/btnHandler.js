@@ -35,3 +35,11 @@ $("#gitChess").click(function (e) {
 $("#gitNN").click(function (e) {
     window.open("https://github.com/wietzeschelhaas/NNFromScratch");
 });
+
+$("#gitRNN").click(function (e) {
+    window.open("https://github.com/wietzeschelhaas/RNNFromScratch");
+});
+
+$("#gitCrypto").click(function (e) {
+    window.open("https://github.com/wietzeschelhaas/BitcoinTechnicalAnalysisAPI");
+});
